@@ -1,0 +1,307 @@
+                        /* adopt-list.css + dog_detail.css + adopt-review.css */
+
+                        /* +++++ list.css +++++ */
+
+.page-adopt-list .region-menu .sub-menu {
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.page-adopt-list .region-menu .menu-item a:hover {
+    transform: translateY(10px);
+}
+
+.page-adopt-list .dog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 20px 0;
+}
+
+.page-adopt-list .dog-card {
+    flex: 0 0 calc((100% - 3 * 16px) / 4);
+    overflow: hidden;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow);
+}
+
+.page-adopt-list .dog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+
+.page-adopt-list .dog-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.page-adopt-list .dog-info {
+    padding: 14px 16px;
+}
+
+.page-adopt-list .dog-info h3 {
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+}
+
+.page-adopt-list .dog-info p {
+    margin: 0;
+    color: var(--text-sub);
+    font-size: .88rem;
+    line-height: 1.5;
+}
+.page-adopt-list .back-to-region {
+    margin-top: 12px;
+    font-size: .88rem;
+    text-align: right;
+}
+
+.page-adopt-list .notice {
+    margin-top: 36px;
+    padding: 24px 28px;
+    background: var(--beige);
+    border-radius: var(--radius-md);
+}
+
+.page-adopt-list .notice h2 {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.page-adopt-list .notice p {
+    margin: 0;
+    color: var(--text-dark);
+}
+
+            /* +++++ detail.css +++++ */
+
+    .page-dog-detail .intro {
+        background: var(--beige);
+    }
+    
+    .page-dog-detail .dog-detail-layout {
+        display: flex;
+        align-items: flex-start;
+        gap: 32px;
+    }
+    
+    .page-dog-detail .dog-photos {
+        flex: 0 0 380px;
+    }
+    
+    .page-dog-detail .dog-photos img {
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+        margin-top: 130px;
+        box-shadow: var(--shadow);
+    }
+    
+    .page-dog-detail .dog-detail-content {
+        flex: 1;
+        min-width: 0;
+    }
+    
+    .page-dog-detail .dog-detail-content h2 {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .page-dog-detail .dog-detail-content h2::after {
+        display: none;
+    }
+    .page-dog-detail .dog-detail-content h2::after {
+        display: none;
+    }
+    
+    .page-dog-detail .protection-status {
+        display: inline-block;
+        margin-bottom: 8px;
+        padding: 4px 14px;
+        color: var(--mint-dark);
+        background: var(--mint-pale);
+        border-radius: var(--radius-pill);
+        font-size: .85rem;
+        font-weight: 700;
+    }
+    
+    .page-dog-detail .dog-summary {
+        margin-bottom: 16px;
+        color: var(--text-sub);
+    }
+    
+    .page-dog-detail .dog-info-table {
+        margin: 20px 0;
+        border-top: 2px solid var(--mint);
+    }
+    
+    .page-dog-detail .info-row {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid var(--beige-dark);
+    }
+    
+    .page-dog-detail .info-row dt {
+        flex: 0 0 120px;
+        padding: 10px 16px;
+        background: var(--beige);
+        font-weight: 700;
+    }
+    
+    .page-dog-detail .info-row dd {
+        flex: 1;
+        margin: 0;
+        padding: 10px 16px;
+    }
+    
+    .page-dog-detail .notice-text {
+        margin-top: 12px;
+        color: var(--text-sub);
+        font-size: .85rem;
+    }
+    
+    .page-dog-detail .apply-link {
+        margin-top: 24px;
+    }
+    
+    .page-dog-detail .back-to-list {
+        margin-top: 36px;
+        text-align: center;
+        font-size: .92rem;
+    }
+    
+    .page-dog-detail .button {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+    }
+
+            /* +++++ review.css +++++*/
+
+.page-adopt-review .review-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.page-adopt-review .review-card {
+    position: relative;
+    flex: 0 0 calc((100% - 48px) / 4);
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow);
+}
+
+.page-adopt-review .review-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+
+.page-adopt-review .review-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.page-adopt-review .review-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    padding: 12px;
+    color: var(--white);
+    background: rgba(46, 59, 54, .88);
+    opacity: 0; 
+}
+
+.page-adopt-review .review-card:hover .review-overlay {
+    opacity: 1;
+}
+
+.page-adopt-review .review-overlay h3 {
+    margin: 0;
+    color: var(--mint-light);
+    font-size: .95rem;
+}
+
+.page-adopt-review .review-date,
+.page-adopt-review .review-author {
+    margin: 0;
+    color: var(--beige-dark);
+    font-size: .75rem;
+}
+
+.page-adopt-review .review-text {
+    margin: 0;
+    overflow: hidden;
+    font-size: .8rem;
+    line-height: 1.4;
+}
+
+.page-adopt-review .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 32px 0;
+}
+
+.page-adopt-review .pagination a {
+    padding: 6px 14px;
+    color: var(--text-dark);
+    border: 1px solid var(--beige-dark);
+    border-radius: var(--radius-pill);
+}
+
+.page-adopt-review .pagination a:hover {
+    background: var(--mint-pale);
+}
+
+.page-adopt-review .pagination a.active {
+    color: var(--white);
+    background: var(--mint);
+    border-color: var(--mint);
+    font-weight: 700;
+}
+
+.page-adopt-review .form-group {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+.page-adopt-review .form-group label {
+    flex: 0 0 110px;
+    text-align: right;
+}
+
+.page-adopt-review .input-area input,
+.page-adopt-review .input-area textarea {
+    flex: 1;
+    min-width: 0;
+}
+
+.page-adopt-review input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+}
+
+.page-adopt-review .apply-link {
+    margin-top: 28px;
+    padding: 16px;
+    background: var(--beige);
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    text-align: center;
+}
